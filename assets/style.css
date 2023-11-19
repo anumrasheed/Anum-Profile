@@ -1,0 +1,35 @@
+*{
+    margin:0;
+}
+header h1{
+    display:inline-block;
+    background-color: rgba(121, 207, 207);
+    /* border: solid;  */
+    padding-left: 25px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.top{ 
+    background-color: grey;
+}
+header nav{
+float: right;
+padding-right: 25px;
+/* border: solid green;  to be deleted borders of navigation bar */
+}
+header li{
+    /* background-color: rgb(235, 21, 21); */
+    display:inline-block;
+   /* border: solid black; to be deleted borders of navigation bar */
+    margin-top: 27px;
+    margin-bottom: 15px;
+    margin-right:25px;
+}
+.top2{
+    background-image: url(./images/02-hero-bg.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+    height:200px;
+    max-height: 200vh;
+}
