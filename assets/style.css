@@ -15,7 +15,7 @@ h1{
 /*   flex-basis:40%; */
 }
 .navigation{
-  flex-basis:60%
+  flex-basis:40%
 }
 .items{
 color:turquoise;
@@ -39,3 +39,27 @@ color:turquoise;
     height:200px;
     max-height: 200vh;
 }
+
+.all-sections{
+    display:flex;
+    flex-direction:column;
+    background-color:pink;
+    min-height:500px;
+  }
+  .section-item{
+  margin:3px; 
+  background-color:grey;
+  }
+  .about-me{
+    display:flex;
+    flex-direction:row;
+    gap:2rem;
+  }
+  /* .about-me div{
+    
+   background-color:yellow; 
+  } */
+  
+  .vl {
+    border-left: 2px solid black;
+  }
