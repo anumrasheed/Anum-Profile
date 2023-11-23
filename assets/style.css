@@ -43,13 +43,15 @@ color:turquoise;
 .all-sections{
     display:flex;
     flex-direction:column;
-    background-color:pink;
-    min-height:500px;
+    background-color:pink; 
+    
   }
+
   .section-item{
   margin:3px; 
-  background-color:grey;
+  /* background-color:grey; */
   }
+  
   .about-me{
     display:flex;
     flex-direction:row;
@@ -61,5 +63,70 @@ color:turquoise;
   } */
   
   .vl {
-    border-left: 2px solid black;
+    border-left: 2.5px solid black;
+    min-height:151px;
+    margin:2px;
+  }
+  .work{
+    display:flex;
+    flex-direction:row;
+  /* background-color:purple;  */
+    gap:2rem;
+  }
+  
+  .work-child:nth-child(1){
+    padding:2.5px;
+  /*   background-color:teal; */
+  }
+  .work-child:nth-child(3){
+    /* background-color:orange; */
+    flex: 1;
+    min-height: 100%;
+  }
+  
+  .contact-me{
+    display:flex;
+    flex-direction:row;
+    gap:1rem;
+  }
+  .contactme-child:nth-child(3){
+    padding-left:11px;
+  } 
+
+  .workchild-grid{
+    display:grid;
+    gap:1rem;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 2fr 1fr 1fr;
+    grid-template-areas: 
+    "SurfReport SurfReport"
+    "LEDWall Calculator"
+    "PastelPuzzels RunBuddy"
+  }
+  #workchild-grid-item1{
+    grid-area: SurfReport;
+    background-image: url(./images/02-portfolio-1.jpg);
+    height: 25vh;
+  }
+  #workchild-grid-item2{
+    grid-area: LEDWall;
+    background-image: url(./images/02-portfolio-2.jpg);
+  }
+  #workchild-grid-item3{
+    grid-area: Calculator;
+    background-image: url(./images/02-portfolio-3.jpg);
+  }
+  #workchild-grid-item4{
+    grid-area: PastelPuzzels;
+    background-image: url(./images/02-portfolio-4.jpg);
+  }
+  #workchild-grid-item5{
+    grid-area: RunBuddy;
+    background-image: url(./images/02-run-buddy.jpg);
+  }
+  .workchild-grid-area{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
   }
