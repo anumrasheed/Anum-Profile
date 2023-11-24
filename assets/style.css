@@ -16,6 +16,7 @@ h1{
 }
 .navigation{
   flex-basis:40%
+   
 }
 .items{
 color:turquoise;
@@ -43,19 +44,20 @@ color:turquoise;
 .all-sections{
     display:flex;
     flex-direction:column;
-    background-color:pink; 
+     /* background-color:pink;   */
+    margin: 50px; 
     
   }
 
-  .section-item{
+   /* .section-item{
   margin:3px; 
-  /* background-color:grey; */
-  }
-  
+  background-color:grey;
+  } 
+   */
   .about-me{
     display:flex;
     flex-direction:row;
-    gap:2rem;
+    /* gap:2rem; */
   }
   /* .about-me div{
     
@@ -64,20 +66,26 @@ color:turquoise;
   
   .vl {
     border-left: 2.5px solid black;
-    min-height:151px;
-    margin:2px;
+    min-height:107px;
+    /* margin:2px; */
+  }
+  .vl1{
+    max-height: 151px;
+  }
+  .vl2{
+    max-height: 200px;
   }
   .work{
     display:flex;
     flex-direction:row;
   /* background-color:purple;  */
-    gap:2rem;
+    /* gap:2rem; */
   }
   
-  .work-child:nth-child(1){
+  /* .work-child:nth-child(1){
     padding:2.5px;
-  /*   background-color:teal; */
-  }
+  background-color:teal;
+  } */
   .work-child:nth-child(3){
     /* background-color:orange; */
     flex: 1;
@@ -87,11 +95,13 @@ color:turquoise;
   .contact-me{
     display:flex;
     flex-direction:row;
-    gap:1rem;
   }
-  .contactme-child:nth-child(3){
-    padding-left:11px;
-  } 
+  .left{
+    min-width: 10em;
+  }
+  /* .contactme-child:nth-child(3){
+    padding-left:9px;
+  }  */
 
   .workchild-grid{
     display:grid;
@@ -129,4 +139,19 @@ color:turquoise;
     background-size: cover;
     background-repeat: no-repeat;
 
+  }
+
+  .contactme-list{
+    display: flex;
+    list-style:none;
+    justify-content: space-between;
+    background-color: teal;
+  }
+
+  .right{
+    margin-left: 1em;
+  }
+  .menu{
+    width: 100%;
+    padding-right: 1em;
   }
