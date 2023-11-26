@@ -44,8 +44,10 @@ color:turquoise;
 .all-sections{
     display:flex;
     flex-direction:column;
-     /* background-color:pink;   */
+    /* background-color:pink;   */
     margin: 50px; 
+    min-height:40em;
+    justify-content: space-between;
     
   }
 
@@ -58,6 +60,7 @@ color:turquoise;
     display:flex;
     flex-direction:row;
     /* gap:2rem; */
+    
   }
   /* .about-me div{
     
@@ -66,14 +69,14 @@ color:turquoise;
   
   .vl {
     border-left: 2.5px solid black;
-    min-height:107px;
+    height:2em;
     /* margin:2px; */
   }
   .vl1{
-    max-height: 151px;
+    min-height:6.5em ;
   }
   .vl2{
-    max-height: 200px;
+    min-height: 27.5em;
   }
   .work{
     display:flex;
@@ -97,7 +100,7 @@ color:turquoise;
     flex-direction:row;
   }
   .left{
-    min-width: 10em;
+    min-width: 7em;
   }
   /* .contactme-child:nth-child(3){
     padding-left:9px;
