@@ -1,5 +1,10 @@
 *{
-    margin:0;
+   box-sizing: border-box; 
+  margin:0;
+}
+body {
+  padding: 0; 
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .head1{
   background:black;
@@ -27,7 +32,7 @@ color:turquoise;
   flex-direction: row;
   justify-content:space-around;
 }
-.items hr{
+.items hr, .contactme-list-items hr{
   padding:.25px;
   background:turquoise;
 }
@@ -59,8 +64,6 @@ color:turquoise;
   .about-me{
     display:flex;
     flex-direction:row;
-    /* gap:2rem; */
-    
   }
   /* .about-me div{
     
@@ -70,14 +73,17 @@ color:turquoise;
   .vl {
     border-left: 2.5px solid black;
     height:2em;
-    /* margin:2px; */
   }
+
   .vl1{
     min-height:6.5em ;
   }
   .vl2{
     min-height: 27.5em;
   }
+   .vl3{
+    min-height: 4em;
+  } 
   .work{
     display:flex;
     flex-direction:row;
@@ -90,14 +96,9 @@ color:turquoise;
   background-color:teal;
   } */
   .work-child:nth-child(3){
-    /* background-color:orange; */
-    flex: 1;
+    
+    flex: 1; 
     min-height: 100%;
-  }
-  
-  .contact-me{
-    display:flex;
-    flex-direction:row;
   }
   .left{
     min-width: 7em;
@@ -119,42 +120,74 @@ color:turquoise;
   #workchild-grid-item1{
     grid-area: SurfReport;
     background-image: url(./images/02-portfolio-1.jpg);
-    height: 25vh;
+    min-height: 25vh;
   }
   #workchild-grid-item2{
     grid-area: LEDWall;
     background-image: url(./images/02-portfolio-2.jpg);
+    
   }
   #workchild-grid-item3{
     grid-area: Calculator;
     background-image: url(./images/02-portfolio-3.jpg);
+    
   }
   #workchild-grid-item4{
     grid-area: PastelPuzzels;
     background-image: url(./images/02-portfolio-4.jpg);
+    
   }
   #workchild-grid-item5{
     grid-area: RunBuddy;
     background-image: url(./images/02-run-buddy.jpg);
+    
   }
   .workchild-grid-area{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    cursor: pointer;
+    border-color: turquoise;
+    border:2px solid turquoise;
+    position: relative;
 
+  }
+  .bottomleft {
+    position: absolute;
+    bottom: 1rem;
+    background-color: turquoise;
+    min-height: 2.5rem;
+    
+  }
+  .workchild-grid-area:hover{
+    -webkit-filter:brightness(125%);
+  }
+  .contact-me{
+    display:flex;
+    flex-direction:row;
+    /* background-color: blue; */
   }
 
   .contactme-list{
     display: flex;
     list-style:none;
-    justify-content: space-between;
-    background-color: teal;
+    justify-content:space-between;
+    height: 2.5rem;
+    /* background-color: turquoise;  */
+    align-items: end;
   }
 
   .right{
     margin-left: 1em;
   }
   .menu{
-    width: 100%;
-    padding-right: 1em;
+     width: 100%; 
   }
+
+  /* .contactme-list-items:nth-child(1){
+  
+    background-color: blueviolet;
+    
+
+  } */
+ 
