@@ -13,8 +13,6 @@ body {
   flex-direction: row;
   justify-content:space-between;
   align-items:center;
-  /* background-color: blanchedalmond; */
-
 }
 .head1{
   background-color: turquoise;
@@ -28,14 +26,13 @@ body {
 .items{
 color:turquoise;
 }
+
 .list{
   list-style:none;
   display:flex;
   flex-direction: row;
   justify-content:space-around;
   flex-wrap: wrap;
-  /* background-color: chocolate; */
-  /* height: 5em;   */
   
 }
 .items hr, .contactme-list-items hr{
@@ -61,65 +58,20 @@ color:turquoise;
     justify-content: space-between;
     gap:2em;
   }
-
-   /* .section-item{
-  margin:3px; 
-  background-color:grey;
-  } 
-   */
   .about-me{
     display:flex;
     flex-direction:row;
-    /* background-color: grey; */
-    
   }
-  /* .about-me div{
-    
-   background-color:yellow; 
-  } */
   
   .vl {
     border-left: 2.5px solid black;
-    /* height:2em; */
     height: 100%;
   }
-
-  /* .vl1{
-    min-height:6.5em ;
-    padding: 2px;
-  } */
-
-  /* .aboutme-child:nth-child(1){
-    background-color: bisque;
-
-  }
-  .aboutme-child:nth-child(2){
-    background-color: orange;
-
-  }
-
-  .aboutme-child:nth-child(3){
-    background-color: yellow;
-
-  } */
-
-  /* .vl2{
-    min-height: 27.5em;
-  }
-   .vl3{
-    min-height: 4em;
-  }  */
   .work{
     display:flex;
     flex-direction:row;
-  /* background-color:purple;  */
-    /* gap:2rem; */
   }
   
-  /* .work-child:nth-child(1){
-    padding:2.5px;
-  background-color:teal;
-  } */
   .work-child:nth-child(3){
     
     flex: 1; 
@@ -128,9 +80,6 @@ color:turquoise;
   .left{
     min-width: 7em;
   }
-  /* .contactme-child:nth-child(3){
-    padding-left:9px;
-  }  */
 
   .workchild-grid{
     display:grid;
@@ -190,15 +139,14 @@ color:turquoise;
   .contact-me{
     display:flex;
     flex-direction:row;
-    /* background-color: blue; */
   }
 
   .contactme-list{
     display: flex;
     list-style:none;
+    flex-direction:row;
     justify-content:space-between;
     height: 2.5rem;
-    /* background-color: turquoise;  */
     align-items: end;
     flex-wrap: wrap;
   }
@@ -209,25 +157,38 @@ color:turquoise;
   .menu{
      width: 100%; 
   }
-
-  /* .contactme-list-items:nth-child(1){
-  
-    background-color: blueviolet;
-    
-
-  } */
-
    @media (max-width: 431px) {
+    .all-sections{
+      margin: 25px;
+    }
     .about-me{
     display:flex;
-    flex-direction:column;}
+    flex-direction:column;
+  
+}
+  .aboutme-child:nth-child(1){
+    margin: 12px; 
+  }
+
+
     .work{
       display:flex;
-    flex-direction:column;}
-    
+    flex-direction:column;
+  
+}
+.work-child:nth-child(1){
+  margin: 12px; 
+}
     .contact-me{
       display:flex;
     flex-direction:column;
     }
+    .contactme-child:nth-child(1){
+      margin: 12px; 
+    }
+    .contactme-child:nth-child(3){
+      margin: 0px;
+    }
+
   }
   
