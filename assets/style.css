@@ -6,21 +6,23 @@ body {
   padding: 0; 
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-.head1{
+.top1{
   background:black;
   height:10vh;
   display:flex;
   flex-direction: row;
   justify-content:space-between;
   align-items:center;
+  /* background-color: blanchedalmond; */
 
 }
-h1{
-  background:turquoise;
-/*   flex-basis:40%; */
+.head1{
+  background-color: turquoise;
+  text-wrap:nowrap;
 }
+
 .navigation{
-  flex-basis:40%
+  flex-basis:50%;
    
 }
 .items{
@@ -31,6 +33,10 @@ color:turquoise;
   display:flex;
   flex-direction: row;
   justify-content:space-around;
+  flex-wrap: wrap;
+  /* background-color: chocolate; */
+  /* height: 5em;   */
+  
 }
 .items hr, .contactme-list-items hr{
   padding:.25px;
@@ -175,6 +181,7 @@ color:turquoise;
     height: 2.5rem;
     /* background-color: turquoise;  */
     align-items: end;
+    flex-wrap: wrap;
   }
 
   .right{
@@ -190,4 +197,8 @@ color:turquoise;
     
 
   } */
- 
+
+  /* @media (max-width: 429px) {
+    .navigation{flex-basis: 95%;}
+  }
+  */
