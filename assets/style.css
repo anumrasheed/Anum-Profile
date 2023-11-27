@@ -59,7 +59,7 @@ color:turquoise;
     margin: 50px; 
     min-height:40em;
     justify-content: space-between;
-    
+    gap:2em;
   }
 
    /* .section-item{
@@ -70,6 +70,8 @@ color:turquoise;
   .about-me{
     display:flex;
     flex-direction:row;
+    /* background-color: grey; */
+    
   }
   /* .about-me div{
     
@@ -78,18 +80,35 @@ color:turquoise;
   
   .vl {
     border-left: 2.5px solid black;
-    height:2em;
+    /* height:2em; */
+    height: 100%;
   }
 
-  .vl1{
+  /* .vl1{
     min-height:6.5em ;
+    padding: 2px;
+  } */
+
+  /* .aboutme-child:nth-child(1){
+    background-color: bisque;
+
   }
-  .vl2{
+  .aboutme-child:nth-child(2){
+    background-color: orange;
+
+  }
+
+  .aboutme-child:nth-child(3){
+    background-color: yellow;
+
+  } */
+
+  /* .vl2{
     min-height: 27.5em;
   }
    .vl3{
     min-height: 4em;
-  } 
+  }  */
   .work{
     display:flex;
     flex-direction:row;
@@ -198,7 +217,17 @@ color:turquoise;
 
   } */
 
-  /* @media (max-width: 429px) {
-    .navigation{flex-basis: 95%;}
+   @media (max-width: 431px) {
+    .about-me{
+    display:flex;
+    flex-direction:column;}
+    .work{
+      display:flex;
+    flex-direction:column;}
+    
+    .contact-me{
+      display:flex;
+    flex-direction:column;
+    }
   }
-  */
+  
