@@ -12,12 +12,6 @@
 - The website has been designed to be responsive and it has used flex box, grids and media queries
 - Media queries have been used to make the website responsive for small screens
 
-## Table of Contents
-
-- [Usage](#usage)
-- [Credits](#credits)
-- [License](##license)
-
 ## Usage
 - Each menu item features different aspects of Anum's personal Profile. To use this website, you can go to the top navigation bar and click on the relevant links to follow the details related to each menu
 - Main sections comprise of About-Me details, Work details, Contact-Me Information
