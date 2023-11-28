@@ -58,7 +58,7 @@ body {
   max-height: 200vh;
   position: relative;
 }
-.top2 p{
+.top2 p {
   position: absolute;
   color: black;
   font-size: 25px;
@@ -78,8 +78,8 @@ body {
   gap: 2em;
 }
 
-/* flex box for about-me section*/
-.about-me {
+/* flex box for about-me, work and contact-me section*/
+.about-me, .work, .contact-me {
   display: flex;
   flex-direction: row;
 }
@@ -91,13 +91,8 @@ body {
   height: 100%;
 }
 
-/* flex box for work section*/
-.work {
-  display: flex;
-  flex-direction: row;
-}
 
-/*  */
+/* 3rd child of flex box .work */
 .work-child:nth-child(3) {
 
   flex: 1;
@@ -108,7 +103,7 @@ body {
   min-width: 7em;
 }
 
-/* grid defined inside the second section */
+/* grid defined inside the second section<<work>> */
 .workchild-grid {
   display: grid;
   gap: 1rem;
@@ -161,6 +156,7 @@ body {
 
 }
 
+/* css for text on each grid item*/
 .bottomleft {
   position: absolute;
   bottom: 1rem;
@@ -169,15 +165,11 @@ body {
 
 }
 
+/* brightness change when mouse is hovered on each grid item */
 .workchild-grid-area:hover {
   -webkit-filter: brightness(125%);
 }
 
-/* flex box for contact-me section*/
-.contact-me {
-  display: flex;
-  flex-direction: row;
-}
 
 .contactme-list {
   display: flex;
@@ -207,22 +199,16 @@ body {
     margin: 15px;
   }
 
-  .about-me {
+  .about-me, .work, .contact-me, .top1 {
     display: flex;
     flex-direction: column;
     gap: .5em;
 
   }
 
-  .aboutme-child:nth-child(1) {
+  .aboutme-child:nth-child(1), .contactme-child:nth-child(1) {
     border-bottom: 3px solid black;
     align-self: center;
-  }
-
-  .work {
-    display: flex;
-    flex-direction: column;
-    gap: .5em;
   }
 
   .work-child:nth-child(1) {
@@ -230,17 +216,6 @@ body {
     align-self: center;
     text-align: center;
   
-  }
-
-  .contact-me {
-    display: flex;
-    flex-direction: column;
-    gap: .5em;
-  }
-
-  .contactme-child:nth-child(1) {
-    border-bottom: 3px solid black;
-    align-self: center;
   }
 
   .contactme-child:nth-child(3) {
@@ -253,12 +228,6 @@ body {
     height: 8em;
     align-items: center;
 
-  }
-
-  .top1 {
-    display: flex;
-    flex-direction: column;
-    gap: .5em;
   }
 
   .list {
