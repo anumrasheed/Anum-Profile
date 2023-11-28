@@ -1,194 +1,269 @@
-*{
-   box-sizing: border-box; 
-  margin:0;
+* {
+  box-sizing: border-box;
+  margin: 0;
 }
+
 body {
-  padding: 0; 
+  padding: 0;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-.top1{
-  background:black;
-  height:10vh;
-  display:flex;
+
+/* flex box that includes head1 and navigation menu as children */
+.top1 {
+  background: black;
+  height: 5em;
+  display: flex;
   flex-direction: row;
-  justify-content:space-between;
-  align-items:center;
+  justify-content: space-between;
+  align-items: center;
 }
-.head1{
+
+/* heading Anum-Profile --child of top1*/
+.head1 {
   background-color: turquoise;
-  text-wrap:nowrap;
+  text-wrap: nowrap;
 }
 
-.navigation{
-  flex-basis:50%;
-   
-}
-.items{
-color:turquoise;
+/* child of top1 */
+.navigation {
+  flex-basis: 50%;
+
 }
 
-.list{
-  list-style:none;
-  display:flex;
+.items {
+  color: turquoise;
+}
+
+.list {
+  list-style: none;
+  display: flex;
   flex-direction: row;
-  justify-content:space-around;
+  justify-content: space-around;
   flex-wrap: wrap;
-  
-}
-.items hr, .contactme-list-items hr{
-  padding:.25px;
-  background:turquoise;
-}
-  
-.top2{
-    background-image: url(./images/02-hero-bg.jpg);
-    background-repeat: no-repeat;
-    width: 100%;
-    background-size: cover;
-    height:200px;
-    max-height: 200vh;
+
 }
 
-.all-sections{
-    display:flex;
-    flex-direction:column;
-    /* background-color:pink;   */
-    margin: 50px; 
-    min-height:40em;
-    justify-content: space-between;
-    gap:2em;
-  }
-  .about-me{
-    display:flex;
-    flex-direction:row;
-  }
-  
-  .vl {
-    border-left: 2.5px solid black;
-    height: 100%;
-  }
-  .work{
-    display:flex;
-    flex-direction:row;
-  }
-  
-  .work-child:nth-child(3){
-    
-    flex: 1; 
-    min-height: 100%;
-  }
-  .left{
-    min-width: 7em;
-  }
+.items hr,
+.contactme-list-items hr {
+  padding: .25px;
+  background: turquoise;
+}
 
-  .workchild-grid{
-    display:grid;
-    gap:1rem;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows: 2fr 1fr 1fr;
-    grid-template-areas: 
+.top2 {
+  background-image: url(./images/02-hero-bg.jpg);
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: cover;
+  height: 200px;
+  max-height: 200vh;
+  position: relative;
+}
+.top2 p{
+  position: absolute;
+  color: black;
+  font-size: 25px;
+  bottom: 1rem;
+  right: 2em;
+  text-wrap: nowrap;
+  background-color: turquoise;
+}
+
+/* flex box defined for all three sections */
+.all-sections {
+  display: flex;
+  flex-direction: column;
+  margin: 50px;
+  min-height: 45vh;
+  justify-content: space-between;
+  gap: 2em;
+}
+
+/* flex box for about-me section*/
+.about-me {
+  display: flex;
+  flex-direction: row;
+}
+
+
+/* vertical line on each section */
+.vl {
+  border-left: 2.5px solid black;
+  height: 100%;
+}
+
+/* flex box for work section*/
+.work {
+  display: flex;
+  flex-direction: row;
+}
+
+/*  */
+.work-child:nth-child(3) {
+
+  flex: 1;
+  min-height: 100%;
+}
+
+.left {
+  min-width: 7em;
+}
+
+/* grid defined inside the second section */
+.workchild-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 2fr 1fr 1fr;
+  grid-template-areas:
     "SurfReport SurfReport"
     "LEDWall Calculator"
     "PastelPuzzels RunBuddy"
-  }
-  #workchild-grid-item1{
-    grid-area: SurfReport;
-    background-image: url(./images/02-portfolio-1.jpg);
-    min-height: 25vh;
-  }
-  #workchild-grid-item2{
-    grid-area: LEDWall;
-    background-image: url(./images/02-portfolio-2.jpg);
-    
-  }
-  #workchild-grid-item3{
-    grid-area: Calculator;
-    background-image: url(./images/02-portfolio-3.jpg);
-    
-  }
-  #workchild-grid-item4{
-    grid-area: PastelPuzzels;
-    background-image: url(./images/02-portfolio-4.jpg);
-    
-  }
-  #workchild-grid-item5{
-    grid-area: RunBuddy;
-    background-image: url(./images/02-run-buddy.jpg);
-    
-  }
-  .workchild-grid-area{
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    cursor: pointer;
-    border-color: turquoise;
-    border:2px solid turquoise;
-    position: relative;
+}
 
-  }
-  .bottomleft {
-    position: absolute;
-    bottom: 1rem;
-    background-color: turquoise;
-    min-height: 2.5rem;
-    
-  }
-  .workchild-grid-area:hover{
-    -webkit-filter:brightness(125%);
-  }
-  .contact-me{
-    display:flex;
-    flex-direction:row;
+#workchild-grid-item1 {
+  grid-area: SurfReport;
+  background-image: url(./images/02-portfolio-1.jpg);
+  min-height: 25vh;
+}
+
+#workchild-grid-item2 {
+  grid-area: LEDWall;
+  background-image: url(./images/02-portfolio-2.jpg);
+
+}
+
+#workchild-grid-item3 {
+  grid-area: Calculator;
+  background-image: url(./images/02-portfolio-3.jpg);
+
+}
+
+#workchild-grid-item4 {
+  grid-area: PastelPuzzels;
+  background-image: url(./images/02-portfolio-4.jpg);
+
+}
+
+#workchild-grid-item5 {
+  grid-area: RunBuddy;
+  background-image: url(./images/02-run-buddy.jpg);
+
+}
+
+.workchild-grid-area {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  border-color: turquoise;
+  border: 2px solid turquoise;
+  position: relative;
+
+}
+
+.bottomleft {
+  position: absolute;
+  bottom: 1rem;
+  background-color: turquoise;
+  min-height: 2.5rem;
+
+}
+
+.workchild-grid-area:hover {
+  -webkit-filter: brightness(125%);
+}
+
+/* flex box for contact-me section*/
+.contact-me {
+  display: flex;
+  flex-direction: row;
+}
+
+.contactme-list {
+  display: flex;
+  list-style: none;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 2.5rem;
+  align-items: end;
+  flex-wrap: wrap;
+}
+
+.right {
+  margin-left: 1em;
+}
+
+.menu {
+  width: 100%;
+}
+
+.contactme-list {
+  padding-left: 0px;
+}
+
+/* media query to adapt to different screen sizes */
+@media (max-width: 431px) {
+  .all-sections {
+    margin: 15px;
   }
 
-  .contactme-list{
+  .about-me {
     display: flex;
-    list-style:none;
-    flex-direction:row;
-    justify-content:space-between;
-    height: 2.5rem;
-    align-items: end;
-    flex-wrap: wrap;
+    flex-direction: column;
+    gap: .5em;
+
   }
 
-  .right{
-    margin-left: 1em;
+  .aboutme-child:nth-child(1) {
+    border-bottom: 3px solid black;
+    align-self: center;
   }
-  .menu{
-     width: 100%; 
+
+  .work {
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
   }
-   @media (max-width: 431px) {
-    .all-sections{
-      margin: 25px;
-    }
-    .about-me{
-    display:flex;
-    flex-direction:column;
+
+  .work-child:nth-child(1) {
+    border-bottom: 3px solid black;
+    align-self: center;
+    text-align: center;
   
-}
-  .aboutme-child:nth-child(1){
-    margin: 12px; 
   }
 
+  .contact-me {
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+  }
 
-    .work{
-      display:flex;
-    flex-direction:column;
-  
-}
-.work-child:nth-child(1){
-  margin: 12px; 
-}
-    .contact-me{
-      display:flex;
-    flex-direction:column;
-    }
-    .contactme-child:nth-child(1){
-      margin: 12px; 
-    }
-    .contactme-child:nth-child(3){
-      margin: 0px;
-    }
+  .contactme-child:nth-child(1) {
+    border-bottom: 3px solid black;
+    align-self: center;
+  }
+
+  .contactme-child:nth-child(3) {
+    margin: 0px;
+  }
+
+  .contactme-list {
+    display: flex;
+    flex-direction: column;
+    height: 8em;
+    align-items: center;
 
   }
-  
+
+  .top1 {
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+  }
+
+  .list {
+    gap: 1em;
+    padding: 0px;
+  }
+
+}
