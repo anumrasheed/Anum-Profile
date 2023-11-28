@@ -67,7 +67,7 @@ a:link, a:visited {
   color: black;
   font-size: 25px;
   bottom: 1rem;
-  right: 2em;
+  right: 2rem;
   text-wrap: nowrap;
   background-color: turquoise;
 }
@@ -99,8 +99,9 @@ a:link, a:visited {
 /* 3rd child of flex box .work */
 .work-child:nth-child(3) {
 
-  flex: 1;
-  min-height: 100%;
+   flex: 1; 
+  /* min-height: 100%; */
+  /* background-color: blue; */
 }
 
 .left {
@@ -117,13 +118,14 @@ a:link, a:visited {
     "workchild-grid-item1 workchild-grid-item1"
     "workchild-grid-item2 workchild-grid-item3"
     "workchild-grid-item4 workchild-grid-item5"
+  
 }
 
 #workchild-grid-item1 {
   grid-area: workchild-grid-item1;
   background-image: url(./images/02-portfolio-1.jpg);
   min-height: 25vh;
-  max-width: 100%;
+  
 }
 
 #workchild-grid-item2 {
@@ -165,14 +167,16 @@ a:link, a:visited {
 /* css for text on each grid item*/
 .bottomleft {
   position: absolute;
-  bottom: 1rem;
+  bottom: 9px;
   background-color: turquoise;
   min-height: 2.5rem;
+  color: black;
 
 }
 
 /* brightness change when mouse is hovered on each grid item */
 .workchild-grid-area:hover {
+  filter: brightness(125%);
   -webkit-filter: brightness(125%);
 }
 
@@ -189,7 +193,7 @@ a:link, a:visited {
 
 .right {
   margin-left: 1em;
-}
+} 
 
 .menu {
   width: 100%;
