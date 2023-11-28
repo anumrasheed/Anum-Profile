@@ -16,7 +16,7 @@
 
 - [Usage](#usage)
 - [Credits](#credits)
-- [License](#license)
+- [License](##license)
 
 ## Usage
 - Each menu item features different aspects of Anum's personal Profile. To use this website, you can go to the top navigation bar and click on the relevant links to follow the details related to each menu
